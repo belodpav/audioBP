@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="">
+	<title>Audio Plugin</title>
+	<style>
+
+	</style>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="audio-player">
+		<div class="audio-player__inner">
+			<div class="audio-player__track-descr">
+				<div class="ap-track-descr">
+					<div class="ap-track-descr__track-photo">
+					</div>
+					<div class="ap-track-descr__info">
+						<div class="ap-track-descr__info-title">Space oddity</div>
+						<div class="ap-track-descr__info-author">Emile Edison</div>
+					</div>
+				</div>	
+			</div>
+			<div class="audio-player__track-controls">
+				<button class="audio-player__track-controls-btn audio-player__btn-prev"></button>
+				<button class="audio-player__track-controls-btn audio-player__btn-play"></button>
+				<button class="audio-player__track-controls-btn audio-player__btn-next"></button>
+			</div>
+			<div class="audio-player__timeline">
+				<div class="timeline">
+					<div class="timeline__timer">
+						<span class="timeline__timer-current">0:08</span>
+						<span class="timeline__timer-max">3:20</span>
+					</div>
+					<div class="timeline__progress-bar">
+						<div class="timeline__bar timeline__bar-progress"></div>
+						<div class="timeline__bar timeline__bar-progress-active"></div>
+						<div class="timeline__bar timeline__bar-progress-ready"></div>
+					</div>
+				</div>
+			</div>
+			<div class="audio-player__controls">
+				<div class="ap-controls">
+					<button class="ap-controls__btn ap-controls__btn-volume"></button>
+					<button class="ap-controls__btn ap-controls__btn-track-list"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/script.js"></script>
+	<script>
+		var aud = new AudioBP({autoplay: true});
+		console.log(aud);
+	</script>
+</body>
+</html>
